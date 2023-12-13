@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.tech4lyf.dayatmlauncher">
+
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+
+    <uses-feature
+        android:name="android.hardware.usb.host"
+        android:required="true" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.DayATMLauncher">
+        <activity
+            android:name=".Selector_Activity"
+            android:exported="false" />
+        <activity
+            android:name=".ActivityAddtoWallet"
+            android:exported="false" />
+        <activity
+            android:name=".INBNFAcceptActivity"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="android.hardware.usb.action.USB_DEVICE_ATTACHED" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".AEPSLoadActivity" />
+        <activity android:name=".AdminSetup" />
+        <activity android:name=".AdminLogin" />
+        <activity android:name=".TestDispense" />
+        <activity android:name=".SunmiDispense" />
+        <activity android:name=".TestPrint" />
+        <activity android:name=".SuccessActivity" />
+        <activity android:name=".MQTTDispense" />
+        <activity android:name=".RegisterMerchantActivity" />
+        <activity android:name=".PutCashActivity" />
+        <activity android:name=".LoginActivity" />
+        <activity android:name=".HomeActivity" />
+        <activity android:name=".NDEDispense" />
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <service android:name=".UsbService1" />
+        <service android:name=".UsbService" />
+        <service android:name=".BackgroundService" />
+        <service android:name="org.eclipse.paho.android.service.MqttService" />
+    </application>
+
+</manifest>

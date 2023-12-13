@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".BbpsPayFragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="500dp"
+                    android:layout_height="match_parent">
+
+                    <LinearLayout
+                        android:layout_width="300dp"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/tvBillType"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="BILLERTYPE"
+                            android:textSize="24sp"
+                            android:textStyle="bold" />
+
+                        <Spinner
+                            android:id="@+id/spinnerBillerName"
+                            android:layout_width="match_parent"
+                            android:layout_height="50dp" />
+
+
+                        <com.google.android.material.textfield.TextInputLayout
+                            android:id="@+id/tilParam1"
+                            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            app:boxBackgroundColor="@null">
+
+                            <com.google.android.material.textfield.TextInputEditText
+                                android:id="@+id/tipParam1"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content" />
+                        </com.google.android.material.textfield.TextInputLayout>
+
+                        <com.google.android.material.textfield.TextInputLayout
+
+                            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="Mobile Number"
+                            app:boxBackgroundColor="@null">
+
+                            <com.google.android.material.textfield.TextInputEditText
+                                android:id="@+id/tipBbpsMobile"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:inputType="number" />
+                        </com.google.android.material.textfield.TextInputLayout>
+
+                        <com.google.android.material.textfield.TextInputLayout
+
+                            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="E-Mail Addres"
+                            app:boxBackgroundColor="@null">
+
+                            <com.google.android.material.textfield.TextInputEditText
+                                android:id="@+id/tipBbpsMail"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:inputType="textEmailAddress" />
+                        </com.google.android.material.textfield.TextInputLayout>
+
+
+                        <com.google.android.material.textfield.TextInputLayout
+                            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            app:boxBackgroundColor="@null">
+
+                            <com.google.android.material.textfield.TextInputEditText
+                                android:id="@+id/tipBbpsAmount"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:hint="Amount"
+                                android:inputType="number" />
+                        </com.google.android.material.textfield.TextInputLayout>
+
+                        <Button
+                            android:id="@+id/buttonBbpsPay"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+
+                            android:backgroundTint="@color/dayatm_red"
+                            android:text="Pay" />
+
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</FrameLayout>

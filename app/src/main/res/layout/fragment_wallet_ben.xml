@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".WalletBenFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:visibility="gone">
+
+            <TextView
+                android:id="@+id/textView21"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Your Wallet Balance is "
+                android:textSize="20dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tvWalBal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="00.00"
+                android:textColor="@color/dayatm_red"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="400dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <Spinner
+                android:id="@+id/spinnerBen"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginBottom="10dp" />
+
+            <TextView
+                android:id="@+id/tvAddBen"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:gravity="right|center_horizontal|center_vertical"
+                android:text="Add Beneficiary"
+                android:textColor="@color/dayatm_red"
+                android:textSize="20sp" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="10dp"
+                android:enabled="false">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/tipAmount"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:enabled="true"
+                    android:hint="Enter Amount" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/tilOTP"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:enabled="false"
+                android:focusableInTouchMode="true"
+                android:visibility="gone">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/tipOTP"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:focusableInTouchMode="true"
+                    android:hint="Enter OTP" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.davidmiguel.numberkeyboard.NumberKeyboard
+                android:id="@+id/numkeyboardDMT"
+                android:layout_width="250dp"
+                android:layout_height="250dp"
+                app:keyboardType="integer"
+
+                >
+
+            </com.davidmiguel.numberkeyboard.NumberKeyboard>
+
+            <com.davidmiguel.numberkeyboard.NumberKeyboard
+                android:id="@+id/numkeyboardOTP"
+                android:layout_width="250dp"
+                android:layout_height="250dp"
+                app:keyboardType="integer"
+                android:visibility="gone"
+
+                >
+
+            </com.davidmiguel.numberkeyboard.NumberKeyboard>
+
+
+
+            <Button
+                android:id="@+id/btnDepNext"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/dayatm_red"
+                android:text="NEXT"
+                app:backgroundTint="@color/dayatm_red" />
+            <Button
+                android:id="@+id/btnDepOTP"
+                android:visibility="gone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/dayatm_red"
+                android:text="Verify OTP"
+                app:backgroundTint="@color/dayatm_red" />
+        </LinearLayout>
+
+    </LinearLayout>
+</FrameLayout>

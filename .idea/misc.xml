@@ -1,0 +1,42 @@
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="app/src/main/res/drawable/fastag1.xml" value="0.199609375" />
+        <entry key="app/src/main/res/drawable/ic_baseline_arrow_right_24.xml" value="0.215234375" />
+        <entry key="app/src/main/res/drawable/ic_baseline_image_24.xml" value="0.215234375" />
+        <entry key="app/src/main/res/drawable/ic_ccard.xml" value="0.1078125" />
+        <entry key="app/src/main/res/drawable/ic_electric.xml" value="0.1078125" />
+        <entry key="app/src/main/res/drawable/ic_entertainment.xml" value="0.1078125" />
+        <entry key="app/src/main/res/drawable/ic_gas.xml" value="0.1078125" />
+        <entry key="app/src/main/res/drawable/ic_insurance.xml" value="0.1078125" />
+        <entry key="app/src/main/res/drawable/ic_landline.xml" value="0.1078125" />
+        <entry key="app/src/main/res/drawable/ic_loan.xml" value="0.1078125" />
+        <entry key="app/src/main/res/drawable/ic_lpg.xml" value="0.1078125" />
+        <entry key="app/src/main/res/drawable/ic_water.xml" value="0.1078125" />
+        <entry key="app/src/main/res/layout/activity_addto_wallet.xml" value="0.1875" />
+        <entry key="app/src/main/res/layout/activity_home.xml" value="0.203125" />
+        <entry key="app/src/main/res/layout/activity_inbnfaccept.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/activity_login.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/activity_main.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/activity_put_cash.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/fragment_bbps.xml" value="0.3154121863799283" />
+        <entry key="app/src/main/res/layout/fragment_bbps_pay.xml" value="0.35145185456069955" />
+        <entry key="app/src/main/res/layout/fragment_d_m_t.xml" value="0.1875" />
+        <entry key="app/src/main/res/layout/fragment_home.xml" value="0.25" />
+        <entry key="app/src/main/res/layout/fragment_m_a_t_m.xml" value="0.181875" />
+        <entry key="app/src/main/res/layout/fragment_video.xml" value="0.203125" />
+        <entry key="app/src/main/res/layout/fragment_wal_withdraw.xml" value="0.1875" />
+        <entry key="app/src/main/res/layout/fragment_wallet_ben.xml" value="0.25" />
+        <entry key="app/src/main/res/layout/fragment_walletto_bank.xml" value="0.1875" />
+        <entry key="app/src/main/res/layout/fragment_withdraw.xml" value="0.25" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="11" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

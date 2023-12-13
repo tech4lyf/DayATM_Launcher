@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:numpad="http://schemas.android.com/apk/res-auto"
+    tools:context=".MATMFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="400dp"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:enabled="false">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/tipAtmAmt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="30sp"
+                    android:hint="Amount" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+            <com.fxn769.Numpad
+                android:id="@+id/numATMamt"
+                android:layout_width="300dp"
+                android:layout_height="200dp"
+                android:layout_gravity="center"
+                numpad:numpad_background_resource="@drawable/numpad_background"
+                numpad:numpad_grid_background_color="@color/white"
+                numpad:numpad_grid_line_thickness="2dp"
+                numpad:numpad_grid_visible="true"
+                numpad:numpad_image_resource="@drawable/ic_backspace"
+                numpad:numpad_text_color="#000000"
+                numpad:numpad_text_limit="10"
+                numpad:numpad_text_size="18dp" />
+            <Button
+                android:id="@+id/btnAtmNext"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Withdraw"
+                app:backgroundTint="@color/dayatm_red" />
+
+        </LinearLayout>
+    </LinearLayout>
+</FrameLayout>

@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">D2C Launcher</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="dmt_app_token">63R99549163A49A9T422D16219A36A45</string>
+</resources>

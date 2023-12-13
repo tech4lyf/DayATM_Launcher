@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:numpad="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AepsFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="400dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:enabled="false"
+                android:layout_height="wrap_content">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/tipAdhaar"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="30sp"
+                    android:hint="AADHAAR No." />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:enabled="false">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/tipAepsAmt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="30sp"
+                    android:hint="Amount" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <Spinner
+                android:id="@+id/spinner"
+                android:layout_width="match_parent"
+                android:layout_height="50dp" />
+
+            <com.fxn769.Numpad
+                android:id="@+id/numAdhaar"
+                android:layout_width="300dp"
+                android:layout_height="200dp"
+                android:layout_gravity="center"
+                numpad:numpad_background_resource="@drawable/numpad_background"
+                numpad:numpad_grid_background_color="@color/white"
+                numpad:numpad_grid_line_thickness="2dp"
+                numpad:numpad_grid_visible="true"
+                numpad:numpad_image_resource="@drawable/ic_backspace"
+                numpad:numpad_text_color="#000000"
+                numpad:numpad_text_limit="12"
+                numpad:numpad_text_size="18dp" />
+
+            <com.fxn769.Numpad
+                android:id="@+id/numAmtaeps"
+                android:layout_width="300dp"
+                android:layout_height="200dp"
+                android:layout_gravity="center"
+                android:visibility="gone"
+                numpad:numpad_background_resource="@drawable/numpad_background"
+                numpad:numpad_grid_background_color="@color/white"
+                numpad:numpad_grid_line_thickness="2dp"
+                numpad:numpad_grid_visible="true"
+                numpad:numpad_image_resource="@drawable/ic_backspace"
+                numpad:numpad_text_color="#000000"
+                numpad:numpad_text_limit="10"
+                numpad:numpad_text_size="18dp" />
+
+
+            <Button
+                android:id="@+id/btnAepsNext"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Withdraw"
+                app:backgroundTint="@color/dayatm_red" />
+
+        </LinearLayout>
+    </LinearLayout>
+</FrameLayout>

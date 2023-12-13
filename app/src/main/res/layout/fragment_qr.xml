@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:numpad="http://schemas.android.com/apk/res-auto"
+    tools:context=".QrFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="400dp"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/ivQr"
+                android:layout_width="200dp"
+                android:layout_height="200dp"
+                android:scaleType="fitCenter"
+                android:src="@drawable/ic_baseline_image_24" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/imageView14"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:src="@drawable/information" />
+
+                <TextView
+                    android:id="@+id/tvService"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Service charges 00.00 is includent in QR"
+                    android:textColor="@color/dayatm_red"
+                    android:textSize="20sp" />
+            </LinearLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:enabled="false">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/tipQrAmt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Amount"
+                    android:textSize="30sp" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.davidmiguel.numberkeyboard.NumberKeyboard
+                android:id="@+id/numkeyboardQr"
+                android:layout_width="250dp"
+                android:layout_height="250dp"
+                app:keyboardType="integer"
+                android:visibility="gone"
+                />
+
+            <com.fxn769.Numpad
+                android:id="@+id/numQRamt"
+                android:layout_width="300dp"
+                android:layout_height="200dp"
+                android:layout_gravity="center"
+                numpad:numpad_background_resource="@drawable/numpad_background"
+                numpad:numpad_grid_background_color="@color/white"
+                numpad:numpad_grid_line_thickness="2dp"
+                numpad:numpad_grid_visible="true"
+                numpad:numpad_image_resource="@drawable/ic_backspace"
+                numpad:numpad_text_color="#000000"
+                numpad:numpad_text_limit="10"
+                numpad:numpad_text_size="18dp" />
+
+            <Button
+                android:id="@+id/btnQrGen"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/dayatm_red"
+                android:text="Generate QR"
+                app:backgroundTint="@color/dayatm_red" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+</FrameLayout>

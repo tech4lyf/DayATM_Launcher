@@ -1,0 +1,454 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".BbpsFragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/textView19"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="20dp"
+                            android:text="Bill Payments"
+                            android:textSize="20sp" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="horizontal">
+
+                            <androidx.cardview.widget.CardView
+                                android:id="@+id/cardMobRecharge"
+                                android:layout_width="100dp"
+                                android:layout_height="100dp"
+                                android:layout_marginLeft="20dp"
+                                android:layout_marginRight="20dp"
+                                android:layout_marginBottom="20dp"
+                                app:cardBackgroundColor="@color/dayatm_red"
+                                app:cardCornerRadius="20dp">
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:gravity="center"
+                                    android:orientation="vertical">
+
+                                    <ImageView
+                                        android:id="@+id/imageView20"
+                                        android:layout_width="80dp"
+                                        android:layout_height="50dp"
+                                        android:src="@drawable/ic_baseline_smartphone_24" />
+
+                                    <TextView
+                                        android:id="@+id/textView23"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:gravity="center"
+                                        android:text="Mobile Postpaid"
+                                        android:textColor="@color/white" />
+                                </LinearLayout>
+                            </androidx.cardview.widget.CardView>
+
+                            <androidx.cardview.widget.CardView
+                                android:id="@+id/cardFastag"
+                                android:layout_width="100dp"
+                                android:layout_height="100dp"
+                                android:layout_marginLeft="20dp"
+                                android:layout_marginRight="20dp"
+                                android:layout_marginBottom="20dp"
+                                app:cardBackgroundColor="@color/dayatm_red"
+                                app:cardCornerRadius="20dp">
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:gravity="center"
+                                    android:orientation="vertical">
+
+                                    <ImageView
+                                        android:id="@+id/imageView21"
+                                        android:layout_width="80dp"
+                                        android:layout_height="50dp"
+                                        android:src="@drawable/fastag1" />
+
+                                    <TextView
+                                        android:id="@+id/textView24"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:gravity="center"
+                                        android:text="Fastag Recharge"
+                                        android:textColor="@color/white" />
+                                </LinearLayout>
+                            </androidx.cardview.widget.CardView>
+
+                            <androidx.cardview.widget.CardView
+                                android:id="@+id/cardElectricity"
+                                android:layout_width="100dp"
+                                android:layout_height="100dp"
+                                android:layout_marginLeft="20dp"
+                                android:layout_marginRight="20dp"
+                                android:layout_marginBottom="20dp"
+                                app:cardBackgroundColor="@color/dayatm_red"
+                                app:cardCornerRadius="20dp">
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:gravity="center"
+                                    android:orientation="vertical">
+
+                                    <ImageView
+                                        android:id="@+id/imageView22"
+                                        android:layout_width="80dp"
+                                        android:layout_height="50dp"
+                                        android:src="@drawable/ic_electric" />
+
+                                    <TextView
+                                        android:id="@+id/textView25"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:gravity="center"
+                                        android:text="Electricity Payment"
+                                        android:textColor="@color/white" />
+                                </LinearLayout>
+                            </androidx.cardview.widget.CardView>
+
+                            <androidx.cardview.widget.CardView
+                                android:id="@+id/cardLPG"
+                                android:layout_width="100dp"
+                                android:layout_height="100dp"
+                                android:layout_marginLeft="20dp"
+                                android:layout_marginRight="20dp"
+                                android:layout_marginBottom="20dp"
+                                app:cardBackgroundColor="@color/dayatm_red"
+                                app:cardCornerRadius="20dp">
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:gravity="center"
+                                    android:orientation="vertical">
+
+                                    <ImageView
+                                        android:id="@+id/imageView23"
+                                        android:layout_width="80dp"
+                                        android:layout_height="50dp"
+                                        android:src="@drawable/ic_lpg" />
+
+                                    <TextView
+                                        android:id="@+id/textView26"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:gravity="center"
+                                        android:text="LPG GAS"
+                                        android:textColor="@color/white" />
+                                </LinearLayout>
+                            </androidx.cardview.widget.CardView>
+
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="horizontal">
+
+                            <androidx.cardview.widget.CardView
+                                android:id="@+id/cardWater"
+                                android:layout_width="100dp"
+                                android:layout_height="100dp"
+                                android:layout_marginLeft="20dp"
+                                android:layout_marginRight="20dp"
+                                android:layout_marginBottom="20dp"
+                                app:cardBackgroundColor="@color/dayatm_red"
+                                app:cardCornerRadius="20dp">
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:gravity="center"
+                                    android:orientation="vertical">
+
+                                    <ImageView
+                                        android:id="@+id/imageView25"
+                                        android:layout_width="80dp"
+                                        android:layout_height="50dp"
+                                        android:src="@drawable/ic_water" />
+
+                                    <TextView
+                                        android:id="@+id/textView29"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:gravity="center"
+                                        android:text="Water\nPayment"
+                                        android:textColor="@color/white" />
+                                </LinearLayout>
+                            </androidx.cardview.widget.CardView>
+
+                            <androidx.cardview.widget.CardView
+                                android:id="@+id/cardGas"
+                                android:layout_width="100dp"
+                                android:layout_height="100dp"
+                                android:layout_marginLeft="20dp"
+                                android:layout_marginRight="20dp"
+                                android:layout_marginBottom="20dp"
+                                app:cardBackgroundColor="@color/dayatm_red"
+                                app:cardCornerRadius="20dp">
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:gravity="center"
+                                    android:orientation="vertical">
+
+                                    <ImageView
+                                        android:id="@+id/imageView26"
+                                        android:layout_width="80dp"
+                                        android:layout_height="50dp"
+                                        android:src="@drawable/ic_gas" />
+
+                                    <TextView
+                                        android:id="@+id/textView30"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:gravity="center"
+                                        android:text="Gas\nPayments"
+                                        android:textColor="@color/white" />
+                                </LinearLayout>
+                            </androidx.cardview.widget.CardView>
+
+                            <androidx.cardview.widget.CardView
+                                android:id="@+id/cardLandline"
+                                android:layout_width="100dp"
+                                android:layout_height="100dp"
+                                android:layout_marginLeft="20dp"
+                                android:layout_marginRight="20dp"
+                                android:layout_marginBottom="20dp"
+                                app:cardBackgroundColor="@color/dayatm_red"
+                                app:cardCornerRadius="20dp">
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:gravity="center"
+                                    android:orientation="vertical">
+
+                                    <ImageView
+                                        android:id="@+id/imageView27"
+                                        android:layout_width="80dp"
+                                        android:layout_height="50dp"
+                                        android:src="@drawable/ic_landline" />
+
+                                    <TextView
+                                        android:id="@+id/textView31"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:gravity="center"
+                                        android:text="Landline Recharge"
+                                        android:textColor="@color/white" />
+                                </LinearLayout>
+                            </androidx.cardview.widget.CardView>
+
+                            <androidx.cardview.widget.CardView
+                                android:id="@+id/cardCcard"
+                                android:layout_width="100dp"
+                                android:layout_height="100dp"
+                                android:layout_marginLeft="20dp"
+                                android:layout_marginRight="20dp"
+                                android:layout_marginBottom="20dp"
+                                app:cardBackgroundColor="@color/dayatm_red"
+                                app:cardCornerRadius="20dp">
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:gravity="center"
+                                    android:orientation="vertical">
+
+                                    <ImageView
+                                        android:id="@+id/imageView28"
+                                        android:layout_width="80dp"
+                                        android:layout_height="50dp"
+                                        android:src="@drawable/ic_ccard" />
+
+                                    <TextView
+                                        android:id="@+id/textView32"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:gravity="center"
+                                        android:text="Credit Cards Payment"
+                                        android:textColor="@color/white" />
+                                </LinearLayout>
+                            </androidx.cardview.widget.CardView>
+
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="horizontal">
+
+                            <androidx.cardview.widget.CardView
+                                android:id="@+id/cardLoan"
+                                android:layout_width="100dp"
+                                android:layout_height="100dp"
+                                android:layout_marginLeft="20dp"
+                                android:layout_marginRight="20dp"
+                                android:layout_marginBottom="20dp"
+                                app:cardBackgroundColor="@color/dayatm_red"
+                                app:cardCornerRadius="20dp">
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:gravity="center"
+                                    android:orientation="vertical">
+
+                                    <ImageView
+                                        android:id="@+id/imageView29"
+                                        android:layout_width="80dp"
+                                        android:layout_height="50dp"
+                                        android:src="@drawable/ic_loan" />
+
+                                    <TextView
+                                        android:id="@+id/textView33"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:gravity="center"
+                                        android:text="Load Repayment"
+                                        android:textColor="@color/white" />
+                                </LinearLayout>
+                            </androidx.cardview.widget.CardView>
+
+                            <androidx.cardview.widget.CardView
+                                android:id="@+id/cardInsurance"
+                                android:layout_width="100dp"
+                                android:layout_height="100dp"
+                                android:layout_marginLeft="20dp"
+                                android:layout_marginRight="20dp"
+                                android:layout_marginBottom="20dp"
+                                app:cardBackgroundColor="@color/dayatm_red"
+                                app:cardCornerRadius="20dp">
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:gravity="center"
+                                    android:orientation="vertical">
+
+                                    <ImageView
+                                        android:id="@+id/imageView30"
+                                        android:layout_width="80dp"
+                                        android:layout_height="50dp"
+                                        android:src="@drawable/ic_insurance" />
+
+                                    <TextView
+                                        android:id="@+id/textView34"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:gravity="center"
+                                        android:text="Incurance Payments"
+                                        android:textColor="@color/white" />
+                                </LinearLayout>
+                            </androidx.cardview.widget.CardView>
+
+                            <androidx.cardview.widget.CardView
+                                android:id="@+id/cardEntertainment"
+                                android:layout_width="100dp"
+                                android:layout_height="100dp"
+                                android:layout_marginLeft="20dp"
+                                android:layout_marginRight="20dp"
+                                android:layout_marginBottom="20dp"
+                                app:cardBackgroundColor="@color/dayatm_red"
+                                app:cardCornerRadius="20dp">
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:gravity="center"
+                                    android:orientation="vertical">
+
+                                    <ImageView
+                                        android:id="@+id/imageView31"
+                                        android:layout_width="80dp"
+                                        android:layout_height="50dp"
+                                        android:src="@drawable/ic_entertainment" />
+
+                                    <TextView
+                                        android:id="@+id/textView35"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:gravity="center"
+                                        android:text="Entertainment"
+                                        android:textColor="@color/white" />
+                                </LinearLayout>
+                            </androidx.cardview.widget.CardView>
+
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</FrameLayout>

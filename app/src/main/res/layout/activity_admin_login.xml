@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:numpad="http://schemas.android.com/apk/res-auto"
+    tools:context=".AdminLogin">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/imageView6"
+                android:layout_width="200dp"
+                android:layout_height="200dp"
+                app:srcCompat="@drawable/d2clogonew" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:focusableInTouchMode="true"
+                >
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/edtPin"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:enabled="false"
+                    android:hint="Your Pin" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.fxn769.Numpad
+                android:id="@+id/numPadAdmin"
+                numpad:numpad_background_resource="@drawable/numpad_background"
+                numpad:numpad_grid_background_color="@color/white"
+                numpad:numpad_grid_line_thickness="2dp"
+
+                numpad:numpad_grid_visible="true"
+                numpad:numpad_image_resource="@drawable/ic_backspace"
+                numpad:numpad_text_color="#000000"
+                numpad:numpad_text_limit="10"
+                numpad:numpad_text_size="18dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center" />
+
+            <Button
+                android:id="@+id/btnAdminLogin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/dayatm_red"
+                android:text="Login" />
+        </LinearLayout>
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
